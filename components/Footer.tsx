@@ -21,17 +21,17 @@ export default function Footer() {
     }
   }, [p])
   if (isActive) return (
-    <footer className='relative w-full flex flex-col px-5 xl:px-20 bg-[var(--foreground)]'>
-      <div className="w-full flex flex-col items-center pt-20 pb-10 border-b border-[var(--background)] gap-10">
+    <footer className='relative w-full flex flex-col px-5 xl:px-20 bg-[var(--background)]'>
+      <div className="w-full flex flex-col items-center pt-20 pb-10 border-b border-[var(--foreground)] gap-10">
         <Image className={`w-[200px] sm:w-[300px] object-contain`} src={resolvedTheme === "dark" ? "/logo_b.svg" : "/logo.svg"} alt="logo" width={300} height={70} />
 
-        <div className="w-fit flex flex-wrap items-center justify-center gap-8 text-2xl text-[var(--background)] mb-5">
+        <div className="w-fit flex flex-wrap items-center justify-center gap-8 text-2xl text-[var(--foreground)] mb-5">
           <Link href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><FaInstagram /></Link>
           <Link href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></Link>
           <Link href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></Link>
           <Link href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"><FaXTwitter /></Link>
         </div>
-        <div className="w-fit flex flex-wrap items-center justify-center gap-10 text-xl text-[var(--background)]">
+        <div className="w-fit flex flex-wrap items-center justify-center gap-10 text-xl text-[var(--foreground)]">
           <Link href="/">Home</Link>
           <Link href="/about">About Us</Link>
           <Link href="/services">Services</Link>
@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="w-full flex items-center justify-center py-8">
-        <p className="text-center garet text-sm text-[var(--background)] opacity-75">&copy; 2025 Impact Makers Events. All rights reserved.</p>
+        <p className="text-center garet text-sm text-[var(--foreground)] opacity-75">&copy; 2025 Impact Makers Events. All rights reserved.</p>
       </div>
     </footer>
   )

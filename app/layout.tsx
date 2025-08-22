@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import ProviderWrapper from "../components/ProviderWrapper";
 import TabsBar from "../components/TabsBar";
 import { ThemeProvider } from "next-themes";
+// import CustomCursor from "@/components/CustomCursor";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
     description: "From concept to execution, Impact Makers Events delivers high-quality event management services. Let's create something unforgettable.",
     images: "/logo_card.png",
   },
-  icons: "/logo.png",
+  icons: "/logo_t.svg",
 };
 
 export default function RootLayout({
@@ -58,6 +59,7 @@ export default function RootLayout({
         <ProviderWrapper>
           <ThemeProvider attribute="class" enableSystem>
             <div>
+              {/* <CustomCursor /> */}
               <TabsBar />
               {children}
               <Footer />

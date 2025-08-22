@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useRef } from "react"
-import services from "../data/services"
+import cards from "../data/heroCards"
 import HeroCardsImg from "../components/HeroCardsImg"
 
 export default function HeroSlider() {
@@ -41,8 +41,8 @@ export default function HeroSlider() {
         className="flex items-center gap-10 ease-linear px-10 py-5"
         style={{ whiteSpace: 'nowrap' }}
       >
-        <HeroCardsImg services={services} dark={true} />
-        <HeroCardsImg services={services} dark={true} />
+        <HeroCardsImg services={cards} dark={true} />
+        <HeroCardsImg services={cards} dark={true} />
       </div>
     </div>
   )

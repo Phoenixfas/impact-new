@@ -1,68 +1,129 @@
 const services = [
-    {
-        id: "1",
-        name: 'Stand Fabrication',
-        description: "We design and construct custom exhibition stands that blend creativity, functionality, and brand identity. Our expert team manages the process from concept to installation, ensuring each stand captures attention and engages audiences. Using high-quality materials and innovative techniques, we create impactful displays that enhance your brand's presence at events, trade shows, and exhibitions.",
-        snippet: "Custom-built exhibition stands that captivate audiences.",
-        main_img: "/images/services/stand.jpg",
-        other_imgs: ["/images/services/stand(2).jpg", "/images/services/stand(3).jpg", "/images/services/stand(4).jpg", "/images/services/stand(5).jpg"],
-    },
-    {
-        id: "2",
-        name: 'Event Management',
-        description: "We provide expert event management services that turn your vision into reality. Our team handles every detail with precision to create unforgettable experiences for corporate events, exhibitions, and social gatherings, offering innovative solutions that make a lasting impact. Our creative vision with extraordinary attention to detail, managing every aspect, including venue selection, theme design, logistics, vendor coordination, and on-site management.",
-        snippet: "End-to-end planning and execution for corporate, social, and luxury events.",
-        main_img: "/images/services/event-mgmt.jpg",
-        other_imgs: ["/images/services/event-mgmt(2).jpg", "/images/services/event-mgmt(3).jpg" ],
-    },
-    {
-        id: "3",
-        name: 'Branding & Gifts',
-        description: "We offer innovative branding solutions and premium corporate gifts to enhance your brand identity. From customized merchandise to unique promotional items, we create impactful products that engage your audience and strengthen your brand presence. Our approach ensures each gift reflects your values and leaves a memorable impression.",
-        snippet: "Personalized branding solutions and premium corporate gifts.",
-        main_img: "/images/services/branding.jpg",
-        other_imgs: ["/images/services/branding(1).png", "/images/services/branding(2).jpg", "/images/services/branding(3).jpg", "/images/services/branding(4).jpg", "/images/services/branding(5).jpg"],
-    },
-    {
-        id: "4",
-        name: 'AV & Lighting',
-        description: "We offer cutting-edge audiovisual and lighting solutions that elevate your event experience. Our team provides innovative technology and expert support to create immersive environments that captivate audiences and enhance your message. From sound systems to lighting design, we deliver high-quality solutions that make your event unforgettable.",
-        snippet: "High-quality audiovisual and lighting setups for an immersive experience.",
-        main_img: "/images/services/av.jpg",
-        other_imgs: []
-    },
-    {
-        id: "5",
-        name: 'Videography & Photography',
-        description: "We provide professional videography and photography services to capture your event's most memorable moments. Our team combines creativity and technical expertise to produce high-quality images and videos that tell your story and engage your audience. From event coverage to promotional content, we deliver exceptional visual media that showcases your brand.",
-        snippet: "Capturing your event’s essence with professional visuals.",
-        main_img: "/images/services/videography.jpg",
-        other_imgs: []
-    },
-    {
-        id: "6",
-        name: 'Exhibition Space Selling',
-        description: "We collaborate with event organizers to sell empty exhibition spaces, connecting them with exhibitors looking to showcase their brands. Our strategic approach ensures maximum occupancy, offering businesses the opportunity to design customized displays while helping organizers optimize their event spaces effectively.",
-        snippet: "Connecting exhibitors with prime spaces for maximum exposure.",
-        main_img: "/images/services/exhibition.jpg",
-        other_imgs: []
-    },
-    {
-        id: "7",
-        name: 'Furniture Rental',
-        description: "We provide high-quality furniture rental solutions to enhance your events, exhibitions, and corporate spaces. From elegant seating and tables to functional displays and décor, our diverse inventory ensures comfort and style for any occasion. With flexible options and timely delivery, we help create the perfect ambiance to match your vision.",
-        snippet: "Elegant and functional event furniture to enhance ambiance.",
-        main_img: "/images/services/furniture.jpg",
-        other_imgs: ["images/services/furniture(1).png", "images/services/furniture(2).jpg", "images/services/furniture(3).jpg", "images/services/furniture(4).jpg", "images/services/furniture(5).jpg", "images/services/furniture(6).jpg", "images/services/furniture(7).jpg", "images/services/furniture(8).jpg", "images/services/furniture(9).jpg", "images/services/furniture(10).jpg", "images/services/furniture(11).jpg", "images/services/furniture(12).jpg", "images/services/furniture(13).jpg", "images/services/furniture(14).jpg", "images/services/furniture(15).jpg", "images/services/furniture(16).jpg", "images/services/furniture(17).jpg", "images/services/furniture(18).jpg", "images/services/furniture(19).jpg", "images/services/furniture(20).jpg", "images/services/furniture(21).jpg", "images/services/furniture(22).jpg", "images/services/furniture(23).jpg", "images/services/furniture(24).jpg", "images/services/furniture(25).jpg", "images/services/furniture(26).jpg", "images/services/furniture(27).jpg", "images/services/furniture(28).jpg", "images/services/furniture(29).jpg", "images/services/furniture(30).jpg"]
-    },
-    {
-        id: "8",
-        name: 'Event Organizing',
-        description: "We specialize in organizing exceptional events that resonate with your goals and audience. With expertise in planning, coordination, and on-site execution, we transform your vision into a seamless and memorable experience, ensuring success at every step.",
-        snippet: "Creating unforgettable experiences that align with your goals.",
-        main_img: "/images/services/event-organ.jpg",
-        other_imgs: [],
-    }
-]
+  {
+    id: "1",
+    name: "Manufacturing of Stands",
+    description:
+      "We create and build unique display stands that combine brand identification, functionality, and inventiveness. Our knowledgeable staff oversees the entire process, from conception to setup, making sure every stand draws interest and keeps audiences interested. We design powerful displays that improve your brand's visibility at events, trade shows, and exhibitions using premium materials and creative strategies.",
+    snippet:
+      "We create and build unique display stands that are representative of your company. We create a memorable impression using premium materials and innovative ideas.",
+    main_img: "/images/services/stand.jpg",
+    other_imgs: [
+      "/images/services/stand(2).jpg",
+      "/images/services/stand(3).jpg",
+      "/images/services/stand(4).jpg",
+      "/images/services/stand(5).jpg",
+    ],
+  },
+  {
+    id: "2",
+    name: "Management of Events",
+    description:
+      "We offer professional event management services that make your idea a reality. With creative solutions that leave a lasting impression, our staff meticulously manages every aspect to produce remarkable experiences for social gatherings, business events, and exhibitions.\n Every element, including venue selection, theme design, logistics, vendor coordination, and on-site administration, is managed by our imaginative vision and exceptional attention to detail.",
+    snippet:
+      "Our team guarantees smooth organization for private events, exhibits, and corporate gatherings from preparation to execution.",
+    main_img: "/images/services/event-mgmt.png",
+    other_imgs: [
+      "/images/services/event-mgmt(2).jpg",
+      "/images/services/event-mgmt(3).jpg",
+    ],
+  },
+  {
+    id: "3",
+    name: "Gifts & Branding",
+    description:
+      "To strengthen your brand identification, we provide excellent corporate gifts and creative branding solutions. We produce powerful products that captivate your audience and bolster your brand visibility, ranging from personalised merchandise to distinctive promotional things. Our methodology guarantees that every gift embodies your principles and creates a lasting impact.",
+    snippet:
+      "We provide innovative promotional products that build your brand and create enduring impressions, ranging from branded merchandise to high-end freebies.",
+    main_img: "/images/services/branding.jpg",
+    other_imgs: [
+      "/images/services/branding(1).png",
+      "/images/services/branding(2).jpg",
+      "/images/services/branding(3).jpg",
+      "/images/services/branding(4).jpg",
+      "/images/services/branding(5).jpg",
+    ],
+  },
+  {
+    id: "4",
+    name: "Lighting and Audiovisual",
+    description:
+      "We provide expert lighting and AV solutions that enthrall your audience and improve the ambiance of your event. We customize every component to fit your theme and venue, from ambient lighting to top-notch sound systems. To guarantee a smooth and engaging experience, our knowledgeable staff oversees setup, coordination, and live assistance.",
+    snippet:
+      "Upgrade your event with expertly designed lighting and audiovisual sets that complement your venue, theme, and brand.",
+    main_img: "/images/services/av.jpg",
+    other_imgs: [],
+  },
+  {
+    id: "5",
+    name: "Photography and Videographer",
+    description:
+      "We provide upscale photography and videography services too elegantly and clearly capture every moment. Our team produces captivating images that illustrate your story, whether it's live coverage or post-event highlights. We provide content that creates a lasting impression, whether it's for branding, promotion, or nostalgia.",
+    snippet:
+      "Seize the important times. Our media team produces excellent images that capture the spirit, passion, and vitality of any occasion.",
+    main_img: "/images/services/videography.jpg",
+    other_imgs: [],
+  },
+  {
+    id: "6",
+    name: "Selling Exhibition Space",
+    description:
+      "We work with event planners to find exhibitors who want to display their businesses and sell them vacant exhibition spaces. A calculated strategy guarantees maximum occupancy, giving companies the chance to create personalised displays and assisting event planners in efficiently utilising their event venues.",
+    snippet:
+      "In order to make sure every space provides value, we assist organizers in packing exhibition rooms and matching exhibitors with the appropriate audiences.",
+    main_img: "/images/services/exhibition.png",
+    other_imgs: [],
+  },
+  {
+    id: "7",
+    name: "Renting Furniture",
+    description:
+      "We offer top-notch furniture rental services to improve your corporate spaces, exhibitions, and events. Our extensive collection guarantees comfort and style for every occasion, from sophisticated seats and tables to useful displays and décor. We assist in creating the ideal atmosphere to fit your concept with adaptable solutions and prompt delivery.",
+    snippet:
+      "we offer comfortable, stylish, and logistically smooth furniture that is both elegant and useful for a variety of events.",
+    main_img: "/images/services/furniture.jpg",
+    other_imgs: [
+      "images/services/furniture(1).png",
+      "images/services/furniture(2).jpg",
+      "images/services/furniture(3).jpg",
+      "images/services/furniture(4).jpg",
+      "images/services/furniture(5).jpg",
+      "images/services/furniture(6).jpg",
+      "images/services/furniture(7).jpg",
+      "images/services/furniture(8).jpg",
+      "images/services/furniture(9).jpg",
+      "images/services/furniture(10).jpg",
+      "images/services/furniture(11).jpg",
+      "images/services/furniture(12).jpg",
+      "images/services/furniture(13).jpg",
+      "images/services/furniture(14).jpg",
+      "images/services/furniture(15).jpg",
+      "images/services/furniture(16).jpg",
+      "images/services/furniture(17).jpg",
+      "images/services/furniture(18).jpg",
+      "images/services/furniture(19).jpg",
+      "images/services/furniture(20).jpg",
+      "images/services/furniture(21).jpg",
+      "images/services/furniture(22).jpg",
+      "images/services/furniture(23).jpg",
+      "images/services/furniture(24).jpg",
+      "images/services/furniture(25).jpg",
+      "images/services/furniture(26).jpg",
+      "images/services/furniture(27).jpg",
+      "images/services/furniture(28).jpg",
+      "images/services/furniture(29).jpg",
+      "images/services/furniture(30).jpg",
+    ],
+  },
+  {
+    id: "8",
+    name: "Planning an Event",
+    description:
+      "Our speciality is planning outstanding events that align with your objectives and target audience. We guarantee success at every stage by transforming your concept into a smooth and unforgettable experience through our proficiency in planning, coordinating, and on-site implementation.",
+    snippet:
+      "We take care of all the details of your event, including theme design, logistics, venue selection, and vendor coordination, so you can concentrate on your guests.",
+    main_img: "/images/services/event-plan.png",
+    other_imgs: [],
+  },
+];
 
-export default services
+export default services;

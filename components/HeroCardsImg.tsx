@@ -14,7 +14,7 @@ export default function HeroCardsImg({ services, dark }: { services: any[], dark
   return (
     newServices.map((service, i) => (
       <div key={i} className={"min-w-[150px] max-w-[150px] h-[200px] rounded-xl overflow-hidden shadow-[0_7px_20px_#00000088]"}>
-        <Image src={service.main_img} className='w-full h-full object-cover' alt="service" width={350} height={500} priority />
+        <Image src={service.img} className='w-full h-full object-cover' alt="service" width={350} height={500} priority />
       </div>
     ))
   )
