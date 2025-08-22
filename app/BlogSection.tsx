@@ -15,7 +15,7 @@ export default function BlogSection() {
           </div>
 
           <h2 className="mb-5 text-3xl font-light text-slate-400">
-            Impact Makers' Latest Developments
+            Impact Makers&apos; Latest Developments
           </h2>
 
           <p className="max-w-2xl mx-auto text-slate-600 leading-relaxed">

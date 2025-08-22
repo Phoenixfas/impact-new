@@ -28,7 +28,7 @@ export default function Cta() {
                     </h2>
 
                     <p className="max-w-2xl mx-auto text-white/90 leading-relaxed">
-                        With the support of our expertise, imagination, and strategic planning, let's realise your next big idea.
+                        With the support of our expertise, imagination, and strategic planning, let&apos;s realise your next big idea.
                     </p>
                 </div>
 

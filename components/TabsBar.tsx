@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { BiHomeAlt2 } from "react-icons/bi";
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
@@ -8,13 +8,13 @@ export default function TabsBar() {
     const pathname = usePathname()
     const p = pathname.split('/')[1] || ''
     const [activeTab, setActiveTab] = useState(0)
-    const tabs = [
+    const tabs = useMemo(() => [
         { id: 0, content: <BiHomeAlt2 />, pathname: '' },
         { id: 1, content: 'About', pathname: 'about' },
         { id: 2, content: 'Services', pathname: 'services' },
         { id: 3, content: 'Blogs', pathname: 'blogs' },
+    ], [])
 
-    ]
     const [scrollDirection, setScrollDirection] = useState('up');
 
     useEffect(() => {

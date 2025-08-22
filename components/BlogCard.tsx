@@ -2,7 +2,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-export default function BlogCard({ blog }: { blog: any }) {
+interface Blog {
+    id: string;
+    title: string;
+    content: string;
+    snippet: string;
+    keywords: string[];
+    author: string;
+    image: string;
+    date: string;
+    fileAttached: string;
+}
+
+export default function BlogCard({ blog }: { blog: Blog }) {
     return (
         <div className='w-96 rounded-2xl overflow-hidden bg-background shadow-[0px_0px_10px_var(--foreground)] flex flex-col'>
             <Image src={blog.image} alt={blog.title} width={320} height={180} className="w-full h-[250px] object-cover" />

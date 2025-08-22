@@ -2,8 +2,13 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
-export default function HeroCardsImg({ services, dark }: { services: any[], dark: any }) {
-  const [newServices, setNewServices] = useState<any[]>([]);
+interface Card {
+  id: string;
+  img: string;
+}
+
+export default function HeroCardsImg({ services }: { services: Card[] }) {
+  const [newServices, setNewServices] = useState<Card[]>([]);
   useEffect(() => {
 
     if (services && services.length > 0) {

@@ -23,7 +23,7 @@ const CustomCursor = () => {
             }
         };
 
-        const handleMouseLeave = (e: MouseEvent) => {
+        const handleMouseLeave = () => {
             setIsPointer(false);
         };
 
